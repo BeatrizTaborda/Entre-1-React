@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+  
+/*'https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap');*/
+/* ----- Reset ----- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  /*font-family: "PT Sans Caption", sans-serif;*/
+  font-family: "Pacifico", cursiva;
+  background-color: black;
+  color: beige;
+}
+button {
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+}
+/* ----- App ----- */
+.app {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 100vh;
+}
+.app__title {
+  width: 250px;
+  text-align: center;
+  text-shadow: 2px 2px yellowgreen,
+              2px -2px yellowgreen,
+              -2px 2px yellowgreen,
+              -2px -2px yellowgreen;
+}
+.text {
+  color: rgb(50, 3, 3);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.text p {
+  text-align: center;
+  background-color: rgb(95, 123, 95);
+  padding: 7px 14px;
+  border-radius: 7px;
+}
+.btn {
+  background-color: yellowgreen;
+  color: beige;
+  padding: 25px 55px;
+  border-radius: 7px;
+  transition: transform .5s;
+}
+.btn:hover {
+  transform: scale(1.1);
+  transition: transform .5s;
+}
